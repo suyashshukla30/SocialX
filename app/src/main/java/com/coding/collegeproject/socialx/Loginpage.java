@@ -3,11 +3,13 @@ package com.coding.collegeproject.socialx;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.app.Dialog;
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -31,6 +33,8 @@ public class Loginpage extends AppCompatActivity {
     TextView item1,item3;
     TextView item2;
     EditText item4,item5;
+    ImageView facebookView;
+    Dialog dialog;
     int found=0;
     GoogleSignInClient mGoogleSignInClient;
     private static final int RC_SIGN_IN =0 ;
@@ -45,6 +49,10 @@ public class Loginpage extends AppCompatActivity {
         item2=findViewById(R.id.towardssignup);
         item2.setOnClickListener(view -> openactivity1());
         item3.setOnClickListener(view-> openactivity1());
+        facebookView=findViewById(R.id.fimageView);
+        facebookView.setOnClickListener(view->{
+            Toast.makeText(getApplicationContext(), "Error mentioned on github README, Please Check!!",Toast.LENGTH_LONG).show();
+        });
 
         //login by mail
 
@@ -156,5 +164,13 @@ public class Loginpage extends AppCompatActivity {
             Log.w("failed", "signInResult:failed code=" + e.getStatusCode());
             updateUI(null);
         }
+    }
+    @Override
+    public void onBackPressed() {
+
+        Intent intent = new Intent(Intent.ACTION_MAIN);
+        intent.addCategory(Intent.CATEGORY_HOME);
+        intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+        startActivity(intent);
     }
 }
