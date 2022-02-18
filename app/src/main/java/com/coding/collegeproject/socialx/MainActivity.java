@@ -17,7 +17,11 @@ import com.google.android.gms.auth.api.signin.GoogleSignInClient;
 import com.google.android.gms.auth.api.signin.GoogleSignInOptions;
 
 import java.util.List;
-
+/**
+*All the recyclerview activity take place here
+ * Logout from google account is done here
+ * search bar is queryed here.
+ */
 public class MainActivity extends AppCompatActivity {
     RecyclerView recyclerView;
     CustomAdapter adapter;
@@ -36,7 +40,7 @@ public class MainActivity extends AppCompatActivity {
                 .requestEmail()
                 .build();
         mGoogleSignInClient = GoogleSignIn.getClient(this, gso);
-        GoogleSignInAccount acct = GoogleSignIn.getLastSignedInAccount(this);
+
         
         lgtbtn.setOnClickListener(view->{
             dialog=new ProgressDialog(this);

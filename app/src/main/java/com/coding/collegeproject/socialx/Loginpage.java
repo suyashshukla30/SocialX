@@ -1,17 +1,16 @@
 package com.coding.collegeproject.socialx;
 
-import androidx.annotation.NonNull;
-import androidx.appcompat.app.AppCompatActivity;
 
-import android.app.Dialog;
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
-import android.view.View;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
 
 import com.google.android.gms.auth.api.signin.GoogleSignIn;
 import com.google.android.gms.auth.api.signin.GoogleSignInAccount;
@@ -34,7 +33,6 @@ public class Loginpage extends AppCompatActivity {
     TextView item2;
     EditText item4,item5;
     ImageView facebookView;
-    Dialog dialog;
     int found=0;
     GoogleSignInClient mGoogleSignInClient;
     private static final int RC_SIGN_IN =0 ;
@@ -50,9 +48,7 @@ public class Loginpage extends AppCompatActivity {
         item2.setOnClickListener(view -> openactivity1());
         item3.setOnClickListener(view-> openactivity1());
         facebookView=findViewById(R.id.fimageView);
-        facebookView.setOnClickListener(view->{
-            Toast.makeText(getApplicationContext(), "Error mentioned on github README, Please Check!!",Toast.LENGTH_LONG).show();
-        });
+        facebookView.setOnClickListener(view-> Toast.makeText(getApplicationContext(), "Error mentioned on github README, Please Check!!",Toast.LENGTH_LONG).show());
 
         //login by mail
 

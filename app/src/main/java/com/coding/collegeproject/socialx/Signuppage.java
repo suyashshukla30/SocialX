@@ -1,21 +1,16 @@
 package com.coding.collegeproject.socialx;
 
-import androidx.annotation.NonNull;
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.View;
 import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.google.firebase.database.DataSnapshot;
-import com.google.firebase.database.DatabaseError;
+import androidx.appcompat.app.AppCompatActivity;
+
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
-import com.google.firebase.database.ValueEventListener;
 import com.hbb20.CountryCodePicker;
 
 public class Signuppage extends AppCompatActivity {
@@ -32,12 +27,8 @@ String key="";
         item2=findViewById(R.id.textsignedin);
         item3=findViewById(R.id.registerbtn);
         cb=findViewById(R.id.checkBox);
-        item1.setOnClickListener(view -> {
-            openactivity();
-        });
-        item2.setOnClickListener(view -> {
-            openactivity();
-        });
+        item1.setOnClickListener(view -> openactivity());
+        item2.setOnClickListener(view -> openactivity());
         item4=findViewById(R.id.signupname);
         item5=findViewById(R.id.emailfromsignup);
         item6=findViewById(R.id.phonenumber);

@@ -1,5 +1,8 @@
 package com.coding.collegeproject.socialx.models;
-
+/**
+ * All the variable have same name as news.api.org site
+ * This is required to get data perfectly.
+ */
 public class healine {
    source source=null;
     String author="";

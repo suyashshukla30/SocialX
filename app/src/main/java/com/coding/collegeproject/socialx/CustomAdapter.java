@@ -14,9 +14,11 @@ import com.squareup.picasso.Picasso;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
-import java.util.List;
-import java.util.TimeZone;
 
+import java.util.List;
+
+import java.util.TimeZone;
+//This the the adapter class where the list from class headline is invoke and in set text
 public class CustomAdapter extends RecyclerView.Adapter<CustomViewHolder>{
     private Context  context;
     private List<healine> headline;
@@ -35,10 +37,23 @@ public class CustomAdapter extends RecyclerView.Adapter<CustomViewHolder>{
     @SuppressLint("SetTextI18n")
     @Override
     public void onBindViewHolder(@NonNull CustomViewHolder holder, int position) {
-       holder.titleofnews.setText(headline.get(position).getTitle());
-       holder.sourceofnews.setText(headline.get(position).getSource().getName());
-       holder.hoursago.setText(headline.get(position).getPublishedAt()+" ");
-       holder.description.setText(headline.get(position).getDescription());
+       holder.titleofnews.setText(headline.get(position).getTitle());//title of news
+       holder.sourceofnews.setText(headline.get(position).getSource().getName());//source of news
+        String dateStr = headline.get(position).getPublishedAt();
+        SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss'Z'");//format for changing to hour ago
+        sdf.setTimeZone(TimeZone.getTimeZone("GMT"));
+        try {
+            long time = sdf.parse(dateStr).getTime();
+            long now = System.currentTimeMillis();
+            CharSequence ago =
+                    DateUtils.getRelativeTimeSpanString(time, now, DateUtils.MINUTE_IN_MILLIS);
+            holder.hoursago.setText(ago+" ");
+        } catch (ParseException e) {
+            e.printStackTrace();
+        }
+
+
+       holder.description.setText(headline.get(position).getDescription());//description added
        if(headline.get(position).getUrlToImage()!=null){
            Picasso.get().load(headline.get(position).getUrlToImage()).into(holder.imageofnews);
        }
