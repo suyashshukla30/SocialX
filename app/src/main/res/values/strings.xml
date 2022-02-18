@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">SocialX</string>
+    <string name="api_key">494834bf58124a43a5bcaf157d2b87ca</string>
+    <string name="login">LOGIN</string>
 </resources>
