@@ -44,9 +44,7 @@ String key="";
                key = email.substring(0, i) + ',' + email.substring(i + 1);
             }
             if(!email.isEmpty()&&!passwordString.isEmpty()) {
-
-
-
+                 if (cb.isChecked()) {
 
                                     FirebaseDatabase database = FirebaseDatabase.getInstance();
                                     DatabaseReference myRef = database.getReference(key);
@@ -56,7 +54,10 @@ String key="";
                                     Toast.makeText(getApplicationContext(), "User Created", Toast.LENGTH_LONG).show();
                                     Intent intent =new Intent(Signuppage.this,Loginpage.class);
                                     startActivity(intent);
-
+                                     }
+                else{
+                    cb.setError("Check it");
+                }
 
 
 
@@ -64,6 +65,7 @@ String key="";
             else
             {
                 item5.setError("Only .com domain allowed");
+                 item7.setError("Important");
             }
         });
     }
