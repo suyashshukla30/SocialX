@@ -1,5 +1,7 @@
 # SocialX
 
+**App Apk Link-: https://drive.google.com/file/d/1rlZosVbU2WJTBmQTaHyeJvBXQsPjmEiy/view?usp=sharing**
+
 ***This is Suyash Shukla's Project for Android Developer Internship in Quantum IT INNOVATION.***
 
 As per the instruction of given **pdf** for round of application making, my app should be of **news type** with **Sign Up** and **Login** feature, the **cardview** of news should have-:
