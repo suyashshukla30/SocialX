@@ -31,6 +31,9 @@ As per the instruction of given **pdf** for round of application making, my app 
 **Picasso**- Used to download and load image of the news from Url of image of from **https://newsapi.org**.
 
 ### Other feature
+<br>
+
+**Testing Device** Redmi 6.
 
 1. **Login through Google button and direct Logout feature**-For fast and easy login.
 
@@ -42,15 +45,24 @@ As per the instruction of given **pdf** for round of application making, my app 
 ![WhatsApp Image 2022-02-19 at 12 44 53 AM](https://user-images.githubusercontent.com/75569185/154747459-fcaaedee-aaff-481e-9b42-f9a85269f9b6.jpeg)
 
 
-
 ***
 <br>
 
 ## Proof of work
 
-https://user-images.githubusercontent.com/75569185/154741917-433ed283-6187-4a6f-ad83-8c750294ef01.mp4
+<br>
 
-https://user-images.githubusercontent.com/75569185/154741934-e88f58ff-f197-4f6f-8b30-8cad70fb46d2.mp4
+**Testing Device** Redmi 9.
+
+
+
+https://user-images.githubusercontent.com/75569185/154785318-fefc42a4-3b65-4252-a7b5-b170411e9c90.mp4
+
+**Dark Mode**
+
+https://user-images.githubusercontent.com/75569185/154785362-4a13a518-dce4-49a1-9005-bdba07e40edb.mp4
+
+
 
 ***
 <br>
