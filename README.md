@@ -1,10 +1,9 @@
-# SocialX
+# SocialX- A News Android Application
 
 **App Apk Link-: https://drive.google.com/file/d/1rlZosVbU2WJTBmQTaHyeJvBXQsPjmEiy/view?usp=sharing**
 
-***This is Suyash Shukla's Project for Android Developer Internship in Quantum IT INNOVATION.***
 
-As per the instruction of given **pdf** for round of application making, my app should be of **news type** with **Sign Up** and **Login** feature, the **cardview** of news should have-:
+This News app have following features-:
 
 *Title*
 
@@ -69,7 +68,7 @@ https://user-images.githubusercontent.com/75569185/154785362-4a13a518-dce4-49a1-
 ***
 <br>
 
-## Error of facebook integration, Please take it into consideration as fault was from not my side.
+## Error of facebook integration, if you can fix it you are welcomed to contribute
 
 **My facebook developer account is not getting valdation, I tried 2-3 times but not reciving verify link on e-mail account and because of that my developer account is not getting validated , so that feature cannot be implemented**
 
@@ -83,6 +82,5 @@ https://user-images.githubusercontent.com/75569185/154785362-4a13a518-dce4-49a1-
  
  <br>
  
-**Contact**-Email:-suyashshukla65@gmail.com , mobile no:- +91 8957177658
 
 ### Thank You
